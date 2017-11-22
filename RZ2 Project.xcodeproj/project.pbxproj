@@ -19,6 +19,7 @@
 		7D6940791FC5F32C00232B84 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6940771FC5F32700232B84 /* KeychainItemAccessibility.swift */; };
 		7D69407A1FC5F33000232B84 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6940781FC5F32700232B84 /* KeychainWrapper.swift */; };
 		7D69407C1FC5F75C00232B84 /* RetrieveUnitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69407B1FC5F75C00232B84 /* RetrieveUnitsRequest.swift */; };
+		7DEF755D1FC62F8400E8298D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF755C1FC62F8400E8298D /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7D6940771FC5F32700232B84 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		7D6940781FC5F32700232B84 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		7D69407B1FC5F75C00232B84 /* RetrieveUnitsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveUnitsRequest.swift; sourceTree = "<group>"; };
+		7DEF755C1FC62F8400E8298D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		7D6940761FC5F27A00232B84 /* UTILS */ = {
 			isa = PBXGroup;
 			children = (
+				7DEF755C1FC62F8400E8298D /* CustomTextField.swift */,
 				7D6940771FC5F32700232B84 /* KeychainItemAccessibility.swift */,
 				7D6940781FC5F32700232B84 /* KeychainWrapper.swift */,
 			);
@@ -179,6 +182,7 @@
 				7D6940751FC5F1E600232B84 /* NetworkRequest.swift in Sources */,
 				7D6940621FC5EF7C00232B84 /* RZ2_Project.xcdatamodeld in Sources */,
 				7D69405C1FC5EF7C00232B84 /* ViewController.swift in Sources */,
+				7DEF755D1FC62F8400E8298D /* CustomTextField.swift in Sources */,
 				7D69405A1FC5EF7C00232B84 /* AppDelegate.swift in Sources */,
 				7D6940731FC5F13400232B84 /* LoginRequest.swift in Sources */,
 				7D69407C1FC5F75C00232B84 /* RetrieveUnitsRequest.swift in Sources */,

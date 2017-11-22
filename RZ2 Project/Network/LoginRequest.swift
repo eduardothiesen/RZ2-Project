@@ -35,12 +35,27 @@ class LoginRequest: NetworkRequest {
     
     override func processData() {
         let data = try! JSONSerialization.jsonObject(with: incomingData as Data, options: .allowFragments) as! [String : Any]
-        print(data)
+        
+        KeychainWrapper.standard.set((data["data"] as! [String : Any])["token"] as! String, forKey: "token")
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "kDidAuthenticateUser"), object: nil)
     }
     
     override func processErrorData() {
         let data = try! JSONSerialization.jsonObject(with: incomingData as Data, options: .allowFragments) as! [String : Any]
-        
         print(data)
+        
+        var userInfo: [String : Any] = [:]
+        var description = ""
+        
+        if let error = (data["message"] as? String) {
+            description = error
+        } else {
+            description = "Algo deu errado. Tente novamente mais tarde."
+        }
+        
+        userInfo["Error"] = description
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "kDidReceiveLoginError"), object: nil, userInfo: userInfo)
     }
 }
