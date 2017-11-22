@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let networkController = NetworkController()
+        
+        networkController.login(email: "123@gmail.com", password: "123")
     }
 
     override func didReceiveMemoryWarning() {
