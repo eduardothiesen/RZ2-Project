@@ -18,8 +18,7 @@ class RetrieveUnitsRequest: NetworkRequest {
     override func start() {
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"
-        //TODO: ARRUMAR TOKEN
-        request.addValue("token", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer " + KeychainWrapper.standard.string(forKey: "token")!, forHTTPHeaderField: "Authorization")
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")

@@ -8,8 +8,10 @@
 
 import MobileCoreServices
 import Foundation
+import CoreData
 
 class NetworkRequest: Operation, URLSessionDataDelegate {
+    var mainContext: NSManagedObjectContext?
     var sessionTask: URLSessionTask?
     var error: Error?
     var statusCode: Int?

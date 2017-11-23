@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D1640661FC72BA5005C0D3B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1640651FC72BA5005C0D3B /* TableViewController.swift */; };
 		7D69405A1FC5EF7C00232B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6940591FC5EF7C00232B84 /* AppDelegate.swift */; };
 		7D69405C1FC5EF7C00232B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69405B1FC5EF7C00232B84 /* ViewController.swift */; };
 		7D69405F1FC5EF7C00232B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D69405D1FC5EF7C00232B84 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D1640651FC72BA5005C0D3B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7D6940561FC5EF7C00232B84 /* RZ2 Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RZ2 Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6940591FC5EF7C00232B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D69405B1FC5EF7C00232B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D1640601FC7284A005C0D3B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D69405B1FC5EF7C00232B84 /* ViewController.swift */,
+				7D1640651FC72BA5005C0D3B /* TableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7D1640611FC72855005C0D3B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7D69405D1FC5EF7C00232B84 /* Main.storyboard */,
+				7D6940651FC5EF7C00232B84 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		7D69404D1FC5EF7C00232B84 = {
 			isa = PBXGroup;
 			children = (
@@ -72,11 +92,10 @@
 			children = (
 				7D6940761FC5F27A00232B84 /* UTILS */,
 				7D6940591FC5EF7C00232B84 /* AppDelegate.swift */,
-				7D69405B1FC5EF7C00232B84 /* ViewController.swift */,
+				7D1640601FC7284A005C0D3B /* View Controllers */,
 				7D69406F1FC5EFA000232B84 /* Network */,
-				7D69405D1FC5EF7C00232B84 /* Main.storyboard */,
+				7D1640611FC72855005C0D3B /* Storyboards */,
 				7D6940631FC5EF7C00232B84 /* Assets.xcassets */,
-				7D6940651FC5EF7C00232B84 /* LaunchScreen.storyboard */,
 				7D6940681FC5EF7C00232B84 /* Info.plist */,
 				7D6940601FC5EF7C00232B84 /* RZ2_Project.xcdatamodeld */,
 			);
@@ -183,6 +202,7 @@
 				7D6940621FC5EF7C00232B84 /* RZ2_Project.xcdatamodeld in Sources */,
 				7D69405C1FC5EF7C00232B84 /* ViewController.swift in Sources */,
 				7DEF755D1FC62F8400E8298D /* CustomTextField.swift in Sources */,
+				7D1640661FC72BA5005C0D3B /* TableViewController.swift in Sources */,
 				7D69405A1FC5EF7C00232B84 /* AppDelegate.swift in Sources */,
 				7D6940731FC5F13400232B84 /* LoginRequest.swift in Sources */,
 				7D69407C1FC5F75C00232B84 /* RetrieveUnitsRequest.swift in Sources */,
@@ -325,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV2VZRHZBG;
 				INFOPLIST_FILE = "RZ2 Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thiesen.RZ2-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV2VZRHZBG;
 				INFOPLIST_FILE = "RZ2 Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thiesen.RZ2-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
