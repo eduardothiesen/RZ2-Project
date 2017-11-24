@@ -1,0 +1,79 @@
+{
+   "data":{
+      "units":[
+         {
+            "id":13215,
+            "name":"Iguatemi Porto Alegre",
+            "email":"",
+            "address":"",
+            "latitude":"",
+            "longitude":"",
+            "country":{
+               "id":0,
+               "nameBr":"São Martinho",
+               "nameEs":"Saint Marteen",
+               "nameEn":"Saint Marteen"
+            },
+            "state":{
+               "id":23,
+               "name":"Rio Grande do Sul"
+            },
+            "city":{
+               "id":4237,
+               "name":"PORTO ALEGRE"
+            },
+            "type":null,
+            "checklists_ids":[
+
+            ],
+            "regions_ids":[
+               1514,
+               1815,
+               null,
+               null
+            ],
+            "additional_fields":[
+
+            ],
+            "qr_code":"5723c40fe991b-13215"
+         },
+         {
+            "id":13216,
+            "name":"Bourbon Country Porto Alegre",
+            "email":"",
+            "address":"",
+            "latitude":"",
+            "longitude":"",
+            "country":{
+               "id":0,
+               "nameBr":"São Martinho",
+               "nameEs":"Saint Marteen",
+               "nameEn":"Saint Marteen"
+            },
+            "state":{
+               "id":23,
+               "name":"Rio Grande do Sul"
+            },
+            "city":{
+               "id":4237,
+               "name":"PORTO ALEGRE"
+            },
+            "type":null,
+            "checklists_ids":[
+
+            ],
+            "regions_ids":[
+               1514,
+               1815,
+               null,
+               null
+            ],
+            "additional_fields":[
+
+            ],
+            "qr_code":"5723c40fe991b-13215"
+         }
+
+      ]
+   }
+}

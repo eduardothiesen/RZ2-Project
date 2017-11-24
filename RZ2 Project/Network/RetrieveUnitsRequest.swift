@@ -29,11 +29,32 @@ class RetrieveUnitsRequest: NetworkRequest {
     
     override func processData() {
         let data = try! JSONSerialization.jsonObject(with: incomingData as Data, options: .allowFragments) as! [String : Any]
-        print(data)
+        
+        let response = data["data"] as! [String : Any]
+        let units = response["units"] as! Array<[String : Any]>
+        
+        for unit in units {
+            DataManager.shared.addUnit(unit: unit)
+        }
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "kDidReceiveRetrieveUnits"), object: nil, userInfo: nil)
     }
     
     override func processErrorData() {
         let data = try! JSONSerialization.jsonObject(with: incomingData as Data, options: .allowFragments) as! [String : Any]
-        print(data)
+        
+        var userInfo: [String : Any] = [:]
+        var description = ""
+        
+        if let error = (data["message"] as? String) {
+            description = error
+        } else {
+            description = "Algo deu errado. Tente novamente mais tarde."
+        }
+        
+        userInfo["Error"] = description
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "kDidReceiveRetrieveUnitsError"), object: nil, userInfo: userInfo)
+        
     }
 }

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D1640661FC72BA5005C0D3B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1640651FC72BA5005C0D3B /* TableViewController.swift */; };
+		7D1640661FC72BA5005C0D3B /* UnitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1640651FC72BA5005C0D3B /* UnitsViewController.swift */; };
+		7D3146B91FC86F4700099467 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3146B81FC86F4700099467 /* DataManager.swift */; };
 		7D69405A1FC5EF7C00232B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6940591FC5EF7C00232B84 /* AppDelegate.swift */; };
 		7D69405C1FC5EF7C00232B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69405B1FC5EF7C00232B84 /* ViewController.swift */; };
 		7D69405F1FC5EF7C00232B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D69405D1FC5EF7C00232B84 /* Main.storyboard */; };
@@ -20,11 +21,25 @@
 		7D6940791FC5F32C00232B84 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6940771FC5F32700232B84 /* KeychainItemAccessibility.swift */; };
 		7D69407A1FC5F33000232B84 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6940781FC5F32700232B84 /* KeychainWrapper.swift */; };
 		7D69407C1FC5F75C00232B84 /* RetrieveUnitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69407B1FC5F75C00232B84 /* RetrieveUnitsRequest.swift */; };
+		7D72EDE71FC85B7900FDEAEE /* testData.json in Sources */ = {isa = PBXBuildFile; fileRef = 7D72EDE61FC859A200FDEAEE /* testData.json */; };
+		7D72EDE81FC85B8300FDEAEE /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D72EDE61FC859A200FDEAEE /* testData.json */; };
+		7D9B40EA1FC73DE5005D909E /* RZ2_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9B40E91FC73DE5005D909E /* RZ2_ProjectTests.swift */; };
 		7DEF755D1FC62F8400E8298D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEF755C1FC62F8400E8298D /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7D9B40EC1FC73DE5005D909E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D69404E1FC5EF7C00232B84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D6940551FC5EF7C00232B84;
+			remoteInfo = "RZ2 Project";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		7D1640651FC72BA5005C0D3B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7D1640651FC72BA5005C0D3B /* UnitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitsViewController.swift; sourceTree = "<group>"; };
+		7D3146B81FC86F4700099467 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7D6940561FC5EF7C00232B84 /* RZ2 Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RZ2 Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6940591FC5EF7C00232B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D69405B1FC5EF7C00232B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,11 +54,22 @@
 		7D6940771FC5F32700232B84 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		7D6940781FC5F32700232B84 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		7D69407B1FC5F75C00232B84 /* RetrieveUnitsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveUnitsRequest.swift; sourceTree = "<group>"; };
+		7D72EDE61FC859A200FDEAEE /* testData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
+		7D9B40E71FC73DE5005D909E /* RZ2 ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RZ2 ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9B40E91FC73DE5005D909E /* RZ2_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZ2_ProjectTests.swift; sourceTree = "<group>"; };
+		7D9B40EB1FC73DE5005D909E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DEF755C1FC62F8400E8298D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7D6940531FC5EF7C00232B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D9B40E41FC73DE5005D909E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				7D69405B1FC5EF7C00232B84 /* ViewController.swift */,
-				7D1640651FC72BA5005C0D3B /* TableViewController.swift */,
+				7D1640651FC72BA5005C0D3B /* UnitsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -75,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				7D6940581FC5EF7C00232B84 /* RZ2 Project */,
+				7D9B40E81FC73DE5005D909E /* RZ2 ProjectTests */,
 				7D6940571FC5EF7C00232B84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				7D6940561FC5EF7C00232B84 /* RZ2 Project.app */,
+				7D9B40E71FC73DE5005D909E /* RZ2 ProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,8 +147,19 @@
 				7DEF755C1FC62F8400E8298D /* CustomTextField.swift */,
 				7D6940771FC5F32700232B84 /* KeychainItemAccessibility.swift */,
 				7D6940781FC5F32700232B84 /* KeychainWrapper.swift */,
+				7D3146B81FC86F4700099467 /* DataManager.swift */,
 			);
 			path = UTILS;
+			sourceTree = "<group>";
+		};
+		7D9B40E81FC73DE5005D909E /* RZ2 ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D72EDE61FC859A200FDEAEE /* testData.json */,
+				7D9B40E91FC73DE5005D909E /* RZ2_ProjectTests.swift */,
+				7D9B40EB1FC73DE5005D909E /* Info.plist */,
+			);
+			path = "RZ2 ProjectTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +182,24 @@
 			productReference = 7D6940561FC5EF7C00232B84 /* RZ2 Project.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7D9B40E61FC73DE5005D909E /* RZ2 ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D9B40F01FC73DE5005D909E /* Build configuration list for PBXNativeTarget "RZ2 ProjectTests" */;
+			buildPhases = (
+				7D9B40E31FC73DE5005D909E /* Sources */,
+				7D9B40E41FC73DE5005D909E /* Frameworks */,
+				7D9B40E51FC73DE5005D909E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D9B40ED1FC73DE5005D909E /* PBXTargetDependency */,
+			);
+			name = "RZ2 ProjectTests";
+			productName = "RZ2 ProjectTests";
+			productReference = 7D9B40E71FC73DE5005D909E /* RZ2 ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +213,11 @@
 					7D6940551FC5EF7C00232B84 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+					};
+					7D9B40E61FC73DE5005D909E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7D6940551FC5EF7C00232B84;
 					};
 				};
 			};
@@ -173,6 +235,7 @@
 			projectRoot = "";
 			targets = (
 				7D6940551FC5EF7C00232B84 /* RZ2 Project */,
+				7D9B40E61FC73DE5005D909E /* RZ2 ProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +251,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D9B40E51FC73DE5005D909E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D72EDE81FC85B8300FDEAEE /* testData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -196,20 +267,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D69407A1FC5F33000232B84 /* KeychainWrapper.swift in Sources */,
+				7D3146B91FC86F4700099467 /* DataManager.swift in Sources */,
 				7D6940791FC5F32C00232B84 /* KeychainItemAccessibility.swift in Sources */,
 				7D6940741FC5F1E600232B84 /* NetworkController.swift in Sources */,
 				7D6940751FC5F1E600232B84 /* NetworkRequest.swift in Sources */,
 				7D6940621FC5EF7C00232B84 /* RZ2_Project.xcdatamodeld in Sources */,
 				7D69405C1FC5EF7C00232B84 /* ViewController.swift in Sources */,
 				7DEF755D1FC62F8400E8298D /* CustomTextField.swift in Sources */,
-				7D1640661FC72BA5005C0D3B /* TableViewController.swift in Sources */,
+				7D1640661FC72BA5005C0D3B /* UnitsViewController.swift in Sources */,
 				7D69405A1FC5EF7C00232B84 /* AppDelegate.swift in Sources */,
 				7D6940731FC5F13400232B84 /* LoginRequest.swift in Sources */,
 				7D69407C1FC5F75C00232B84 /* RetrieveUnitsRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D9B40E31FC73DE5005D909E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D72EDE71FC85B7900FDEAEE /* testData.json in Sources */,
+				7D9B40EA1FC73DE5005D909E /* RZ2_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D9B40ED1FC73DE5005D909E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D6940551FC5EF7C00232B84 /* RZ2 Project */;
+			targetProxy = 7D9B40EC1FC73DE5005D909E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7D69405D1FC5EF7C00232B84 /* Main.storyboard */ = {
@@ -370,6 +459,38 @@
 			};
 			name = Release;
 		};
+		7D9B40EE1FC73DE5005D909E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV2VZRHZBG;
+				INFOPLIST_FILE = "RZ2 ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thiesen.RZ2-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZ2 Project.app/RZ2 Project";
+			};
+			name = Debug;
+		};
+		7D9B40EF1FC73DE5005D909E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV2VZRHZBG;
+				INFOPLIST_FILE = "RZ2 ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thiesen.RZ2-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZ2 Project.app/RZ2 Project";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -387,6 +508,15 @@
 			buildConfigurations = (
 				7D69406C1FC5EF7C00232B84 /* Debug */,
 				7D69406D1FC5EF7C00232B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D9B40F01FC73DE5005D909E /* Build configuration list for PBXNativeTarget "RZ2 ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D9B40EE1FC73DE5005D909E /* Debug */,
+				7D9B40EF1FC73DE5005D909E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

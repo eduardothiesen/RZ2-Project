@@ -38,11 +38,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func userDidTouchUpInsideLoginButton(_ sender: Any) {
-        loader.startAnimating()
         
         let networkController = NetworkController()
+
         if emailTextField.text != "" && passwordTextField.text != "" {
             networkController.login(email: emailTextField.text!, password: passwordTextField.text!)
+            loader.startAnimating()
         } else {
             let alert = UIAlertController(title: "Atenção", message: "Preencha o campo de e-mail e senha para prosseguir", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))

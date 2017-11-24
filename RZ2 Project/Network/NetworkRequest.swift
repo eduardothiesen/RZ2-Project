@@ -11,7 +11,6 @@ import Foundation
 import CoreData
 
 class NetworkRequest: Operation, URLSessionDataDelegate {
-    var mainContext: NSManagedObjectContext?
     var sessionTask: URLSessionTask?
     var error: Error?
     var statusCode: Int?
@@ -53,8 +52,7 @@ class NetworkRequest: Operation, URLSessionDataDelegate {
         }
         //Check the response code and react appropriately
         statusCode = response.value(forKey: "statusCode") as? Int
-        print(response)
-        print("STATUS CODE: \(statusCode)")
+        
         if  statusCode != 500 {
             completionHandler(.allow)
         } else {

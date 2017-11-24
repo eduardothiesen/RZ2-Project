@@ -68,32 +68,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RZ2 Project/Network/RetrieveUnitsRequest.swift"
-            timestampString = "533149808.081907"
+            filePath = "RZ2 ProjectTests/RZ2_ProjectTests.swift"
+            timestampString = "533232954.535172"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "processErrorData()"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "testJsonParseAndAddingObjects()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RZ2 Project/Network/RetrieveUnitsRequest.swift"
-            timestampString = "533149808.082066"
+            filePath = "RZ2 Project/View Controllers/UnitsViewController.swift"
+            timestampString = "533232954.535352"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "processData()"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "didRetrieveUnits(notification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
