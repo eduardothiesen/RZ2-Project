@@ -68,6 +68,8 @@ class ViewController: UIViewController {
             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             self.enableFields()
             self.loader.stopAnimating()
+            self.emailTextField.text = ""
+            self.passwordTextField.text = ""
             self.performSegue(withIdentifier: "main", sender: self)
         })
     }

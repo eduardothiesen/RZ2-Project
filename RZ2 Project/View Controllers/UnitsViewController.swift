@@ -15,14 +15,10 @@ class UnitsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView?
     @IBOutlet weak var loader: UIActivityIndicatorView?
+    @IBOutlet weak var logoutButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let networkController = NetworkController()
-        networkController.retrieveUnits()
-        
-        unitsDataSource = DataManager.shared.retrieveUnits()
         
         NotificationCenter.default.addObserver(self, selector: #selector(UnitsViewController.didRetrieveUnits(notification:)), name: NSNotification.Name(rawValue: "kDidReceiveRetrieveUnits"), object: nil)
         
@@ -32,17 +28,26 @@ class UnitsViewController: UIViewController {
         
         tableView?.delegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        loader?.startAnimating()
+        
+        let networkController = NetworkController()
+        networkController.retrieveUnits()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     func enableFields() {
-        
+        logoutButton.isEnabled = true
     }
     
     func disableFields() {
-        
+        logoutButton.isEnabled = false
     }
     
     @objc func didRetrieveUnits(notification: Notification) {
@@ -58,6 +63,8 @@ class UnitsViewController: UIViewController {
     
     @objc func didReceiveInternetConnectionError(notification: Notification) {
         let userInfo = notification.userInfo as! [String : Any]
+        //If could not retrieve units, see if there is any already on local storage
+        unitsDataSource = DataManager.shared.retrieveUnits()
         
         DispatchQueue.main.async(execute: {
             let alert = UIAlertController(title: "", message: userInfo["Error"] as? String, preferredStyle: .alert)
@@ -66,12 +73,16 @@ class UnitsViewController: UIViewController {
             
             self.enableFields()
             self.loader?.stopAnimating()
+            self.tableView?.reloadData()
         })
     }
     
     @objc func didReceiveRetrieveUnitsError(notification: Notification) {
         let userInfo = notification.userInfo as! [String : Any]
         
+        //If could not retrieve units, see if there is any already on local storage
+        unitsDataSource = DataManager.shared.retrieveUnits()
+        
         DispatchQueue.main.async(execute: {
             let alert = UIAlertController(title: "", message: userInfo["Error"] as? String, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
@@ -79,7 +90,12 @@ class UnitsViewController: UIViewController {
             
             self.enableFields()
             self.loader?.stopAnimating()
+            self.tableView?.reloadData()
         })
+    }
+    
+    @IBAction func userDidTouchUpInsideLogoutButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

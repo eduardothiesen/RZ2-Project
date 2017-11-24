@@ -46,6 +46,7 @@ class RetrieveUnitsRequest: NetworkRequest {
         var userInfo: [String : Any] = [:]
         var description = ""
         
+        //TODO: Treat error that should force logout 
         if let error = (data["message"] as? String) {
             description = error
         } else {

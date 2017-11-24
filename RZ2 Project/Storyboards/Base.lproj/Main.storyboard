@@ -184,9 +184,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lg6-4e-CVt"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Unidades" id="eFz-zH-esb"/>
+                    <navigationItem key="navigationItem" title="Unidades" id="eFz-zH-esb">
+                        <barButtonItem key="rightBarButtonItem" image="logout" id="w4z-wE-bFr">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="userDidTouchUpInsideLogoutButton:" destination="EAj-20-JJQ" id="ulA-mU-UrV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="loader" destination="0Fx-DC-xnZ" id="J2F-eE-gPB"/>
+                        <outlet property="logoutButton" destination="w4z-wE-bFr" id="3vP-Y7-IyC"/>
                         <outlet property="tableView" destination="Ich-ZE-UCi" id="KJN-4P-DsC"/>
                     </connections>
                 </viewController>
@@ -195,4 +203,7 @@
             <point key="canvasLocation" x="2608.8000000000002" y="98.50074962518741"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logout" width="25" height="25"/>
+    </resources>
 </document>
